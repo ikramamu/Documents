@@ -32,6 +32,10 @@ So the mount command would be:<br>
 `mount -t auto -o loop lab4-practice/image.img /mnt/image` 
 
 
+#### How to check if mounted image is read only
+pending
+
+
 
 
 
