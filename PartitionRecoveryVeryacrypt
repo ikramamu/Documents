@@ -1,0 +1,144 @@
+# Partition Recovery steps
+
+  ls /mount/temp
+  407  ls /mnt/temp
+  408  which bulk_extractor
+  409  cd /mnt/temp
+  410  sudo bulk_extractor -o bulk-out physmem.raw
+  411  cd /mnt/temp
+  412  vim findings-mik-22.md
+  413  ls
+  414  cd lab7-mik-22
+  415  vim findings-mik-22.md
+  416  exit
+  417  mkdir week9
+  418  cd week9
+  419  dd if=/dev/zero of=diskimg.img bs=1M count=100
+  420  losetup -fp diskimg.img
+  421  losetup -fP diskimg.img
+  422  sudo losetup -fP diskimg.img
+  423  sudo bash
+  424  ]
+  425  exit
+  426  ls /mnt/temp
+  427  dd if=/dev/zero of=diskimg.img bs=1M count=100
+  428  sudo  losetup --read-only --find --show diskimg.img
+  429  losetup
+  430  mmls /dev/loop0
+  431  sudo mmls /dev/loop0
+  432  mmls /dev/loop0
+  433  sudo mmls /dev/loop0
+  434  dd if=/dev/random of=diskimg.raw bs=1M count=500
+  435  sudo  losetup --read-only --find --show diskimg.raw
+  436  mmls /dev/loop1
+  437  sudo mmls /dev/loop1
+  438  fdisk -l /mnt/temp/VeraCryptLab-mik-22
+  439  fsstat /mnt/temp/VeraCryptLab-mik-22
+  440  sudo apt -get update
+  441  sudo apt-get update
+  442  sudo apt-get install veracrypt
+  443  which veracrypt
+  444  git clone https://github.com/veracrypt/VeraCrypt.git
+  445  ls
+  446  rm VeraCrypt
+  447  rmdir VeraCrypt
+  448  sudo rmdir VeraCrypt
+  449  cd Downloads
+  450  wget https://launchpad.net/veracrypt/trunk/1.25.9/+download/veracrypt-1.25.9-setup.tar.bz2
+  451  tar xvf veracrypt-1.25.9-setup.tar.bz2
+  452  ./veracrypt-1.25.9-setup-console-x64
+  453  history
+  454  which veracrypt
+  455  veracrypt --mount-options=readonly --filesystem=none /mnt/temp/VeraCryptLab-mik-22
+  456  veracrypt -l
+  457  veracrypt --volume-properties --slot=1
+  458  sudo fls /dev/mapper/veracrypt1
+  459  mount 
+  460  mount | grep -i vera
+  461  df -h
+  462  fdisk -l /mnt/temp/VeraCryptLab-mik-22
+  463  fdisk -l
+  464  sudo fdisk -l
+  465  ll
+  466  ls week9
+  467  mkdir quizpractice
+  468  cd quizpractice
+  469  dd if=/dev/zero of=disk.img bs=512 count=20000\n
+  470  losetup -fP disk.img
+  471  sudo fdisk -f disk.img
+  472  sudo losetup -f disk.img
+  473  sudo losetup -l
+  474  sudo gdisk /dev/loop0
+  475  mmls /dev/loop0
+  476  sudo mmls /dev/loop0
+  477  kpartx -av /dev/loop0
+  478  sudo lpartx -av /dev/loop0
+  479  sudo kpartx -av /dev/loop0
+  480  tree /dev/mapper
+  481  sudo mkfs.vfat /dev/mapper/loop0p1
+  482  mkswap /dev/mapper/loop0p2 
+  483  sudo mkswap /dev/mapper/loop0p2 
+  484  clear
+  485  ls
+  486  cd..
+  487  cd ..
+  488  ls
+  489  rmdir quizpractice
+  490  sudo rmdir quizpractice
+  491  cd week09-mik-22
+  492  dd if=/dev/zero of=disk.img bs=512 count=200000\n
+  493  losetup -f disk.img
+  494  sudo losetup -f disk.img
+  495  sudo losetup -l
+  496  mkdir quiz2practice
+  497  cd..
+  498  cd ..
+  499  mkdir quiz2practice
+  500  cd quizpractice
+  501  cd quiz2practice
+  502  clear
+  503  dd if=/dev/zero of=disk2quiz.img bs=512 count=200000\n
+  504  sudo losetup -f disk2quiz.img
+  505  sudo losetup -l
+  506  man losetup
+  507  clear
+  508  sudo losetup -D
+  509  sudo losetup -l
+  510  sudo losetup -D
+  511  sudo losetup -l
+  512  sudo losetup -d /dev/loop0
+  513  sudo losetup -l
+  514  clar
+  515  clear
+  516  exit
+  517  sudo losetup -l
+  518  ls
+  519  cd quiz2practice
+  520  tree
+  521  sudo losetup -l
+  522  sudo losetup -f disk2quiz.img
+  523  sudo losetup -l
+  524  sudo gdisk /dev/loop0
+  525  sudo kpartx -av /dev/loop0
+  526  sudo mkfs.vfat /dev/mapper/loop0p1
+  527  sudo mkswap /dev/mapper/loop0p2
+  528  sudo mkfs.ext4 /dev/mapper/loop0p2
+  529  sudo mkfs.ext4 /dev/mapper/loop0p4
+  530  sudo mkfs.vfat /dev/mapper/loop0p3
+  531  mkdir -p /mnt/quiz2/fat121
+  532  sudo mkdir -p /mnt/quiz2/fat121
+  533  sudo mkdir -p /mnt/quiz2/linux1
+  534  sudo mkdir -p /mnt/quiz2/fat122
+  535  sudo mkdir -p /mnt/quiz2/linux2
+  536  mount /dev/mapper/loop0p1 /mnt/quiz2/fat121
+  537  sudo mount /dev/mapper/loop0p1 /mnt/quiz2/fat121
+  538  sudo mount /dev/mapper/loop0p2 /mnt/quiz2/linux1
+  539  sudo mount /dev/mapper/loop0p3 /mnt/quiz2/fat122
+  540  sudo mount /dev/mapper/loop0p4 /mnt/quiz2/linux2
+  541  cd /mnt/temp
+  542  ls
+  543  cp carvedJPEGImage.jpg /mnt/quiz2/fat121
+  544  sudo cp carvedJPEGImage.jpg /mnt/quiz2/fat121
+  545  sudo cp convert.sh /mnt/quiz2/linux1
+  546  sudo umount /mnt/quiz2/fat121
+  547  clear
